@@ -1,6 +1,5 @@
 package com.blog.dao;
 
-import com.blog.pojo.Tag;
 import com.blog.pojo.Type;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;

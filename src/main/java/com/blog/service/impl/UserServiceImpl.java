@@ -4,10 +4,8 @@ import com.blog.dao.UserDao;
 import com.blog.pojo.User;
 import com.blog.service.UserService;
 import com.blog.util.MD5Utils;
-import org.apache.tomcat.util.security.MD5Encoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.security.provider.MD5;
 
 @Service
 public class UserServiceImpl implements UserService {
