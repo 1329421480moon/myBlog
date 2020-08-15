@@ -7,7 +7,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-    //配置登录拦截器
+    //配置了shiro这里
+
+/*    //配置登录拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginInterceptor())
@@ -16,5 +18,5 @@ public class WebConfig implements WebMvcConfigurer {
 //                放行
                 .excludePathPatterns("/admin")
                 .excludePathPatterns("/admin/login");
-    }
+    }*/
 }

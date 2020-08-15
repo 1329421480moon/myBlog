@@ -31,7 +31,7 @@
 
     <insert id="saveComment" parameterType="Comment">
         insert into t_comment (nickname,email,content,avatar,
-        create_time,blog_id,parent_comment_id, admincomment)
+        create_time,blog_id,parent_comment_id, admincomment)C
         values (#{nickname},#{email},#{content},#{avatar},
         #{createTime},#{blogId},#{parentCommentId}, #{adminComment});
     </insert>

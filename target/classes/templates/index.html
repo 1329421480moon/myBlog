@@ -33,7 +33,7 @@
                 <!--content-->
                 <div class="ui attached segment">
 
-                    <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${pageInfo.list}">
+                    <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${pageInfo.list}"><!--获取pageHelper分页对象的list,然后遍历每一个元素并命名为blog-->
                         <div class="ui middle aligned mobile reversed stackable grid">
                             <div class="eleven wide column">
                                 <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank"
@@ -59,6 +59,7 @@
                                         </div>
                                     </div>
                                     <div class="right aligned five wide column">
+                                        <!--blog的-->
                                         <a href="#" th:href="@{/types/{id}(id=${blog.type.id})}" target="_blank"
                                            class="ui blue basic label m-padded-tiny m-text-thin"
                                            th:text="${blog.type.name}">摸鱼方法</a>
@@ -67,6 +68,7 @@
                             </div>
 
                             <div class="five wide column">
+                                <!--设置点击图片也会会跳转到此博客的详情页面-->
                                 <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
                                     <img src="https://unsplash.it/800/450?image=1005" th:src="@{${blog.firstPicture}}"
                                          alt="" class="ui rounded image">
@@ -117,10 +119,11 @@
                     <!--*/-->
                 </div>
 
-                <!--footer-->
+                <!--每一页的最后都将显示当前页面的相关信息-->
                 <div class="ui bottom attached segment">
                     <div class="ui middle aligned two column grid">
                         <div class="column">
+                            <!--获取pageInfo的页码的相关信息-->
                             <div class="item"><a class="ui mini blue basic button"
                                                  th:href="@{/(pagenum=${pageInfo.pageNum}-1)}"
                                                  th:unless="${pageInfo.isFirstPage}">上一页</a></div>
@@ -150,6 +153,7 @@
                             <div class="column">
                                 <i class="idea icon"></i>分类
                             </div>
+                            <!--跳转到博客分类的页面的时候传递的参数是 -1  用于和其他的type的id区分-->
                             <div class="right aligned column">
                                 <a href="#" th:href="@{types/-1}" target="_blank">more <i
                                         class="angle double right icon"></i></a>

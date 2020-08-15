@@ -19,4 +19,10 @@ public class UserServiceImpl implements UserService {
 //        User user = userDao.queryByUsernameAndPassword(username,password);
         return user;
     }
+
+    @Override
+    public User selectUserByUserName(String username){
+        User user = userDao.selectUserByUserName(username);
+        return user;
+    }
 }

@@ -1,7 +1,6 @@
 package com.blog.service.impl;
 
 import com.blog.dao.BlogDao;
-import com.blog.exception.NotFoundException;
 import com.blog.pojo.Blog;
 import com.blog.pojo.BlogAndTag;
 import com.blog.pojo.BlogQuery;
@@ -28,7 +27,7 @@ public class BlogServiceImpl implements BlogService {
     public Blog getDetailedBlog(Long id) {
         Blog blog = blogDao.getDetailedBlog(id);
         if (blog == null) {
-            throw new NotFoundException("该博客不存在");
+            throw new RuntimeException("该博客不存在");
         }
         String content = blog.getContent();
         blog.setContent(MarkdownUtils.markdownToHtmlExtensions(content));  //将Markdown格式转换成html
@@ -85,8 +84,6 @@ public class BlogServiceImpl implements BlogService {
     public List<Blog> searchAllBlog(BlogQuery blog) {
         return blogDao.searchAllBlog(blog);
     }
-
-
 
 
     @Override    //新增博客

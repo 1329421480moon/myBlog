@@ -168,7 +168,7 @@ _.reduceRight = (obj, iterator, memo, context) ->
   _.reduce reversed, iterator, memo, context
 
 
-# Return the first value which passes a truth test.
+# Return the first value which passes a truth com.blog.test.
 _.detect = (obj, iterator, context) ->
   result = null
   _.each obj, (value, index, list) ->
@@ -178,7 +178,7 @@ _.detect = (obj, iterator, context) ->
   result
 
 
-# Return all the elements that pass a truth test. Use JavaScript 1.6's
+# Return all the elements that pass a truth com.blog.test. Use JavaScript 1.6's
 # **filter**, if it exists.
 _.filter = (obj, iterator, context) ->
   return obj.filter iterator, context if nativeFilter and obj.filter is nativeFilter
@@ -196,7 +196,7 @@ _.reject = (obj, iterator, context) ->
   results
 
 
-# Determine whether all of the elements match a truth test. Delegate to
+# Determine whether all of the elements match a truth com.blog.test. Delegate to
 # JavaScript 1.6's **every**, if it is present.
 _.every = (obj, iterator, context) ->
   iterator ||= _.identity
@@ -207,7 +207,7 @@ _.every = (obj, iterator, context) ->
   result
 
 
-# Determine if at least one element in the object matches a truth test. Use
+# Determine if at least one element in the object matches a truth com.blog.test. Use
 # JavaScript 1.6's **some**, if it exists.
 _.some = (obj, iterator, context) ->
   iterator ||= _.identity

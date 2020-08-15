@@ -32,14 +32,14 @@ public class IndexController {
 
     @GetMapping("/")
     public String toIndex(@RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum, Model model){
-
+        /*pageHelper的分页，传入分页的页码和每页的显示条数*/
         PageHelper.startPage(pagenum, 5);
         List<Blog> allBlog = blogService.getIndexBlog();
         List<Type> allType = typeService.getBlogType();  //获取博客的类型(联表查询)
         List<Tag> allTag = tagService.getBlogTag();  //获取博客的标签(联表查询)
         List<Blog> recommendBlog =blogService.getAllRecommendBlog();  //获取推荐博客
 
-        //得到分页结果对象
+        //得到分页结果对象，把它放到分页对象中
         PageInfo pageInfo = new PageInfo(allBlog);
         model.addAttribute("pageInfo", pageInfo);
         model.addAttribute("tags", allTag);
@@ -53,6 +53,7 @@ public class IndexController {
                          @RequestParam String query, Model model){
 
         PageHelper.startPage(pagenum, 5);
+        //
         List<Blog> searchBlog = blogService.getSearchBlog(query);
         PageInfo pageInfo = new PageInfo(searchBlog);
         model.addAttribute("pageInfo", pageInfo);

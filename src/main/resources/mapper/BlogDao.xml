@@ -57,16 +57,16 @@
         delete from t_blog where id = #{id}
     </delete>
 
-    <select id="getIndexBlog" resultMap="blog">  /*主页博客展示*/
+    <select id="getIndexBlog" resultMap="blog">  /*主页博客展示（这里获取所有的博客）,按照时间降序*/
         select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
         t.name , t.id tid,
         u.nickname, u.avatar
-        from t_blog b, t_type t, t_user u
+        from t_blog b, t_type t, t_user u/*博客表、分类表、用户表*/
         where b.type_id = t.id and  b.user_id = u.id order by b.update_time desc
     </select>
 
 
-    <select id="getByTypeId" resultMap="blog">
+    <select id="getByTypeId" resultMap="blog">/*根据分类的id获取博客、分类、用户（和 getIndexBlog几乎是一样的）*/
         select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
         t.name , t.id tid,
         u.nickname, u.avatar
@@ -84,7 +84,7 @@
         order by b.update_time desc
     </select>
 
-    <select id="getAllRecommendBlog" resultMap="blog">
+    <select id="getAllRecommendBlog" resultMap="blog">/*获取前八条的数据，用于最新的*/
         select id, title, recommend from t_blog order by update_time desc limit 0,8
     </select>
 
@@ -109,8 +109,9 @@
         select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
         t.name,
         u.nickname, u.avatar
-        from t_blog b, t_type t, t_user u
-        where b.type_id = t.id and u.id = b.user_id and (b.title like #{pattern} or b.content like #{pattern})
+        from t_blog b, t_type t, t_user u/*博客的显示肯定要有博客和博客的分类和用户的信息，全局搜索博客，包括标题和内容*/
+        where b.type_id = t.id and u.id = b.user_id and
+        (b.title like #{pattern} or b.content like #{pattern})
         order by b.update_time desc
     </select>
 

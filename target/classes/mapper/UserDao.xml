@@ -9,4 +9,8 @@
         where username = #{username} and password = #{password}
     </select>
 
+    <select id="selectUserByUserName"  resultType="com.blog.pojo.User">
+        select * from t_user
+        where username = #{username}
+    </select>
 </mapper>

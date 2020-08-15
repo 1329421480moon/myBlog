@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 //登录拦截器
 public class LoginInterceptor implements HandlerInterceptor {
 
+    //用了shiro安全框架，不需要拦截器了
+
+/*
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         if (request.getSession().getAttribute("user") == null){
@@ -15,5 +18,5 @@ public class LoginInterceptor implements HandlerInterceptor {
             return false;
         }
         return true;
-    }
+    }*/
 }

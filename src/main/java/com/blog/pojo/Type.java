@@ -15,6 +15,6 @@ public class Type {
 
     private Long id;
     private String name;
-
+    //与博客之间的关系是一对多
     private List<Blog> blogs = new ArrayList<>();
 }

@@ -27,6 +27,7 @@
 
       <div class="ui attached segment m-padded-tb-large">
         <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
+          <!--根据type的id进行查询-->
           <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic  button" th:classappend="${type.id==activeTypeId} ? 'violet'" th:text="${type.name}">思考与感悟</a>
           <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'violet'" th:text="${#arrays.length(type.blogs)}">24</div>
         </div>

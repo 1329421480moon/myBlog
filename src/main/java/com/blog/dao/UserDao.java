@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface UserDao {
 
     User queryByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+
+    User selectUserByUserName(@Param("username") String username);
 }

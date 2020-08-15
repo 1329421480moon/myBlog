@@ -36,6 +36,7 @@ public class Blog {
     private String tagIds;
     private String description;
 
+    //注入Type方便前端的级联获取 blog.type.name
     private Type type;
 
     private User user;
