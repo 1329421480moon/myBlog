@@ -48,8 +48,10 @@ public class ShiroConfig {
          */
         Map<String, String> filterMap = new LinkedHashMap<>();
 
+
         shiroFilterFactoryBean.setLoginUrl("/admin");
         shiroFilterFactoryBean.setUnauthorizedUrl("/admin");
+        //放行登录的验证请求
         filterMap.put("/admin/login", "anon");
         filterMap.put("/admin/**", "authc");
 

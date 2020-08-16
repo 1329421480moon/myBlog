@@ -43,6 +43,6 @@ public interface BlogDao {
 
     int deleteBlog(Long id);
 
-
-
+    //更新用户的观看数量（当用户点击某一篇具体博客的时候触发）
+    void updateViewsById(@Param("id") Long id);
 }

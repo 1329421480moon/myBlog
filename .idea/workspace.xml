@@ -2,60 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08ebf5d0-8ae2-4bb1-9acc-7568cc9c269a" name="Default Changelist" comment="update md5">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-07-04.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-07-05.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-07-06.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-07-07.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-08-08.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/config/WebConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/TypeShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/TypeShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/admin/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/dao/BlogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/dao/BlogDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/handler/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/handler/ControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/interceptor/LoginInterceptor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/pojo/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/pojo/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/pojo/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/pojo/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TypeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TypeDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/editormd/lib/codemirror/mode/coffeescript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/editormd/lib/codemirror/mode/coffeescript/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/editormd/lib/codemirror/mode/jinja2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/editormd/lib/codemirror/mode/jinja2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/blog/BlogApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/blog/BlogApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/blog/test/AspectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/blog/test/AspectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/config/WebConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/TypeShowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/TypeShowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/admin/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/admin/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/exception/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/handler/ControllerExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/dao/BlogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/dao/BlogDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/handler/ControllerExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/handler/ControllerExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/interceptor/LoginInterceptor.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/pojo/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/pojo/Blog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/service/BlogService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/BlogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CommentDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TypeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TypeDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/editormd/lib/codemirror/mode/coffeescript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/lib/editormd/lib/codemirror/mode/coffeescript/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/editormd/lib/codemirror/mode/jinja2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/lib/editormd/lib/codemirror/mode/jinja2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/error/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/error/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/blog/BlogApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/blog/BlogApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/blog/test/AspectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/blog/test/AspectTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +132,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="逆波兰表达式" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.blog.test.栈.逆波兰表达式" />
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.blog.test.栈.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MySocketClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.blog.test.多线程.MySocketClient" />
       <module name="blog" />
@@ -186,19 +177,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.blog.test.nio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="逆波兰表达式" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.blog.test.栈.逆波兰表达式" />
-      <module name="blog" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.blog.test.栈.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -250,12 +228,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.逆波兰表达式" />
       <item itemvalue="Application.MySocketClient" />
       <item itemvalue="Application.MySocketServer" />
       <item itemvalue="Application.NioStudy" />
       <item itemvalue="JUnit.BlogApplicationTests.continuesTest" />
-      <item itemvalue="Spring Boot.BlogApplication" />
       <item itemvalue="JUnit.AspectTest.testJiqMi" />
+      <item itemvalue="Spring Boot.BlogApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -328,7 +307,8 @@
       <workItem from="1597112867447" duration="17283000" />
       <workItem from="1597379663398" duration="3657000" />
       <workItem from="1597389221805" duration="2131000" />
-      <workItem from="1597491586785" duration="8177000" />
+      <workItem from="1597491586785" duration="10859000" />
+      <workItem from="1597542270220" duration="11414000" />
     </task>
     <task id="LOCAL-00001" summary="update md5">
       <created>1584841437407</created>
@@ -385,10 +365,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="403" y="99" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596889893698" />
-    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1597492229005">
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1597553042882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597492229005" />
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597553042882" />
     <state x="473" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1596889008981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -405,10 +385,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="314" y="167" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.0.1536.824@0.0.1536.824" timestamp="1596965459805" />
-    <state x="261" y="0" key="CommitChangelistDialog2" timestamp="1594086692823">
+    <state x="261" y="0" key="CommitChangelistDialog2" timestamp="1597503472004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594086692823" />
+    <state x="261" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1597503472004" />
     <state x="-6" y="0" width="781" height="830" key="DiffContextDialog" timestamp="1597128611194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -417,54 +397,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="86" width="538" height="707" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597498436179" />
-    <state width="1493" height="71" key="GridCell.Tab.0.bottom" timestamp="1597498856593">
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1597559902489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597498856593" />
-    <state width="1493" height="71" key="GridCell.Tab.0.center" timestamp="1597498856592">
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597559902489" />
+    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1597559902488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597498856592" />
-    <state width="1493" height="71" key="GridCell.Tab.0.left" timestamp="1597498856592">
+    <state width="1493" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597559902488" />
+    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1597559902487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597498856592" />
-    <state width="1493" height="71" key="GridCell.Tab.0.right" timestamp="1597498856592">
+    <state width="1493" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597559902487" />
+    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1597559902488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597498856592" />
-    <state width="1493" height="71" key="GridCell.Tab.1.bottom" timestamp="1597498856593">
+    <state width="1493" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597559902488" />
+    <state width="1493" height="196" key="GridCell.Tab.1.bottom" timestamp="1597559902489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597498856593" />
-    <state width="1493" height="71" key="GridCell.Tab.1.center" timestamp="1597498856593">
+    <state width="1493" height="196" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597559902489" />
+    <state width="1493" height="196" key="GridCell.Tab.1.center" timestamp="1597559902489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597498856593" />
-    <state width="1493" height="71" key="GridCell.Tab.1.left" timestamp="1597498856593">
+    <state width="1493" height="196" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597559902489" />
+    <state width="1493" height="196" key="GridCell.Tab.1.left" timestamp="1597559902489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597498856593" />
-    <state width="1493" height="71" key="GridCell.Tab.1.right" timestamp="1597498856593">
+    <state width="1493" height="196" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597559902489" />
+    <state width="1493" height="196" key="GridCell.Tab.1.right" timestamp="1597559902489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597498856593" />
-    <state width="1493" height="331" key="GridCell.Tab.2.bottom" timestamp="1597496124653">
+    <state width="1493" height="196" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597559902489" />
+    <state width="1493" height="151" key="GridCell.Tab.2.bottom" timestamp="1597559367733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="331" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597496124653" />
-    <state width="1493" height="331" key="GridCell.Tab.2.center" timestamp="1597496124652">
+    <state width="1493" height="151" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597559367733" />
+    <state width="1493" height="151" key="GridCell.Tab.2.center" timestamp="1597559367733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="331" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1597496124652" />
-    <state width="1493" height="331" key="GridCell.Tab.2.left" timestamp="1597496124652">
+    <state width="1493" height="151" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1597559367733" />
+    <state width="1493" height="151" key="GridCell.Tab.2.left" timestamp="1597559367733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="331" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1597496124652" />
-    <state width="1493" height="331" key="GridCell.Tab.2.right" timestamp="1597496124652">
+    <state width="1493" height="151" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1597559367733" />
+    <state width="1493" height="151" key="GridCell.Tab.2.right" timestamp="1597559367733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="331" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1597496124652" />
+    <state width="1493" height="151" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1597559367733" />
     <state width="1493" height="207" key="GridCell.Tab.3.bottom" timestamp="1596902789366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -493,10 +473,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1536.824@0.0.1536.824" timestamp="1593855181308" />
-    <state x="490" y="154" width="543" height="524" key="StructurePopup" timestamp="1597492779902">
+    <state x="490" y="154" width="543" height="524" key="StructurePopup" timestamp="1597552325397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="490" y="154" width="543" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1597492779902" />
+    <state x="490" y="154" width="543" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1597552325397" />
     <state x="313" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1594618186938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

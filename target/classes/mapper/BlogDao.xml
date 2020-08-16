@@ -46,10 +46,10 @@
     </resultMap>
 
     <select id="getAllBlog" resultMap="blog">  /*后台博客展示*/
-        select b.id, b.title, b.update_time, b.recommend, b.type_id, b.published,
-               t.id tid , t.name
-        from t_blog b, t_type t
-        where b.type_id = t.id  ORDER BY update_time DESC  /*博客类型id=类型id*/
+        SELECT b.id, b.title, b.update_time, b.recommend, b.type_id, b.published,
+        t.id tid , t.name
+        FROM t_blog b INNER JOIN t_type t
+        ON b.type_id = t.id  ORDER BY update_time DESC  /*博客类型id=类型id*/
     </select>
 
 
@@ -58,30 +58,40 @@
     </delete>
 
     <select id="getIndexBlog" resultMap="blog">  /*主页博客展示（这里获取所有的博客）,按照时间降序*/
-        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        SELECT b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
         t.name , t.id tid,
         u.nickname, u.avatar
-        from t_blog b, t_type t, t_user u/*博客表、分类表、用户表*/
-        where b.type_id = t.id and  b.user_id = u.id order by b.update_time desc
+        FROM t_blog b
+        inner JOIN t_type t ON b.type_id = t.id
+        inner JOIN t_user u ON b.user_id = u.id
+        ORDER BY b.update_time DESC
     </select>
 
 
     <select id="getByTypeId" resultMap="blog">/*根据分类的id获取博客、分类、用户（和 getIndexBlog几乎是一样的）*/
-        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        SELECT b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
         t.name , t.id tid,
         u.nickname, u.avatar
-        from t_blog b, t_type t, t_user u
-        where b.type_id = t.id and u.id = b.user_id and b.type_id = #{typeId} order by b.update_time desc
+        FROM t_blog b
+        INNER JOIN t_type t ON b.type_id = t.id
+        INNER JOIN t_user u
+        ON u.id = b.user_id
+        WHERE b.type_id = #{typeId} ORDER BY b.update_time DESC
     </select>
 
     <select id="getByTagId" resultMap="blog">
-        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        SELECT b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
         t.name , t.id tid,
         t1.name tagname, t1.id tagid,
         u.nickname, u.avatar
-        from t_blog b, t_type t, t_user u, t_blog_tags tb, t_tag t1
-        where b.type_id = t.id and u.id = b.user_id and tb.blog_id = b.id and tb.tag_id = t1.id and t1.id = #{tagId}
-        order by b.update_time desc
+        FROM t_blog b
+        INNER JOIN t_type t ON b.type_id = t.id
+        INNER JOIN t_user u ON u.id = b.user_id
+        INNER JOIN t_blog_tags tb ON tb.blog_id = b.id
+        INNER JOIN t_tag t1 ON tb.tag_id = t1.id
+        WHERE  t1.id = #{tagId}
+        ORDER BY b.update_time DESC
+
     </select>
 
     <select id="getAllRecommendBlog" resultMap="blog">/*获取前八条的数据，用于最新的*/
@@ -106,13 +116,14 @@
 
     <select id="getSearchBlog" resultMap="blog">
         <bind name="pattern" value="'%' + query + '%'"/>
-        select b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
+        SELECT b.id, b.title, b.first_picture, b.views, b.update_time, b.description,
         t.name,
         u.nickname, u.avatar
-        from t_blog b, t_type t, t_user u/*博客的显示肯定要有博客和博客的分类和用户的信息，全局搜索博客，包括标题和内容*/
-        where b.type_id = t.id and u.id = b.user_id and
-        (b.title like #{pattern} or b.content like #{pattern})
-        order by b.update_time desc
+        FROM t_blog b
+        INNER JOIN t_type t ON b.type_id = t.id
+        INNER JOIN t_user u ON u.id = b.user_id/*博客的显示肯定要有博客和博客的分类和用户的信息，全局搜索博客，包括标题和内容*/
+        WHERE  (b.title like #{pattern} or b.content like #{pattern})
+        ORDER BY b.update_time DESC
     </select>
 
     <select id="searchAllBlog" parameterType="com.blog.pojo.BlogQuery" resultMap="blog">
@@ -172,4 +183,9 @@
         where DATE_FORMAT(b.update_time, "%Y") = #{year}
     </select>
 
+
+    <!--根据用户点击更新博客的浏览的数目-->
+    <update id="updateViewsById">
+        update t_blog b set b.views = b.views+1 where b.id = #{id}
+    </update>
 </mapper>

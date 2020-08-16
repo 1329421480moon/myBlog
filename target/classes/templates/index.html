@@ -33,7 +33,8 @@
                 <!--content-->
                 <div class="ui attached segment">
 
-                    <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${pageInfo.list}"><!--获取pageHelper分页对象的list,然后遍历每一个元素并命名为blog-->
+                    <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${pageInfo.list}">
+                        <!--获取pageHelper分页对象的list,然后遍历每一个元素并命名为blog-->
                         <div class="ui middle aligned mobile reversed stackable grid">
                             <div class="eleven wide column">
                                 <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank"
@@ -54,7 +55,7 @@
                                                     th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}">2020-3-02</span>
                                             </div>
                                             <div class="item">
-                                                <i class="eye icon"></i> <span th:text="${blog.views}">2342</span>
+                                                <i class="eye icon"></i><a th:text="${blog.views}">1024</a>
                                             </div>
                                         </div>
                                     </div>

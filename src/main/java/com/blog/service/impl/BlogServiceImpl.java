@@ -124,4 +124,9 @@ public class BlogServiceImpl implements BlogService {
         return blogDao.deleteBlog(id);
     }
 
+
+    @Override
+    public void updateViewsById(Long id) {
+        blogDao.updateViewsById(id);
+    }
 }

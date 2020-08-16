@@ -30,14 +30,15 @@ public class IndexController {
     @Autowired
     private TagService tagService;
 
+
     @GetMapping("/")
-    public String toIndex(@RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum, Model model){
+    public String toIndex(@RequestParam(required = false, defaultValue = "1", value = "pagenum") int pagenum, Model model) {
         /*pageHelper的分页，传入分页的页码和每页的显示条数*/
         PageHelper.startPage(pagenum, 5);
         List<Blog> allBlog = blogService.getIndexBlog();
         List<Type> allType = typeService.getBlogType();  //获取博客的类型(联表查询)
         List<Tag> allTag = tagService.getBlogTag();  //获取博客的标签(联表查询)
-        List<Blog> recommendBlog =blogService.getAllRecommendBlog();  //获取推荐博客
+        List<Blog> recommendBlog = blogService.getAllRecommendBlog();  //获取推荐博客
 
         //得到分页结果对象，把它放到分页对象中
         PageInfo pageInfo = new PageInfo(allBlog);
@@ -49,8 +50,8 @@ public class IndexController {
     }
 
     @PostMapping("/search")
-    public String search(@RequestParam(required = false,defaultValue = "1",value = "pagenum")int pagenum,
-                         @RequestParam String query, Model model){
+    public String search(@RequestParam(required = false, defaultValue = "1", value = "pagenum") int pagenum,
+                         @RequestParam String query, Model model) {
 
         PageHelper.startPage(pagenum, 5);
         //
@@ -62,9 +63,13 @@ public class IndexController {
     }
 
     @GetMapping("/blog/{id}")
-    public String toLogin(@PathVariable Long id, Model model){
+    public String toLogin(@PathVariable Long id, Model model) {
+        //更新博客的views数目
+        blogService.updateViewsById(id);
+
         Blog blog = blogService.getDetailedBlog(id);
         model.addAttribute("blog", blog);
         return "blog";
     }
+
 }

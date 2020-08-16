@@ -22,11 +22,6 @@ public class ControllerExceptionHandler {
         //日志打印异常信息
         log.error("Request url: {}, Exception: {}", request.getRequestURI(), e);
 
-/*        //不处理带有ResponseStatus注解的异常
-        if (AnnotationUtils.findAnnotation(e.getClass(), ResponseStatus.class) != null) {
-            throw e;
-        }*/
-
         //返回异常信息到自定义error页面
         ModelAndView mv = new ModelAndView();
         mv.addObject("url", request.getRequestURI());

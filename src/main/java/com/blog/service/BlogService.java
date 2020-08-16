@@ -36,4 +36,5 @@ public interface BlogService {
 
     List<Blog> searchAllBlog(BlogQuery blog);  //后台根据标题、分类、推荐搜索博客
 
+    void updateViewsById(Long id);
 }
